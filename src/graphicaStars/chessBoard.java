@@ -9,15 +9,18 @@ public class chessBoard {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the number of stars on the X and Y axis");
+        System.out.println("Please enter width");
         int x = scanner.nextInt();
-        int y = x;
+        System.out.println("Please enter height");
+        int y = scanner.nextInt();
 
         for (int i = 0;i <= y; i++) {
             for (int j = 0; j <= x; j++) {
-                if (i == y - j || i == j || j == 0 || j == x || i == 0 || i == y ) {
+                if (j == 0 || j == x || i == 0 || i == y) {
                     System.out.print("*");
-                } else  System.out.print(" ");
+                } else if ( j == 1 || i == 1) {
+                    System.out.print(" ");
+                }
             }
             System.out.print('\n');
         }
