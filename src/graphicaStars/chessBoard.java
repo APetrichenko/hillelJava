@@ -16,9 +16,9 @@ public class chessBoard {
 
         for (int i = 0;i <= y; i++) {
             for (int j = 0; j <= x; j++) {
-                if (j == 0 || j == x || i == 0 || i == y) {
+                if( j % 2 != 0 && i % 2 != 0 || j % 2 == 0 && i % 2 == 0) {
                     System.out.print("*");
-                } else if ( j == 1 || i == 1) {
+                } else {
                     System.out.print(" ");
                 }
             }
