@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * Created by Alexey on 6/26/15.
  */
-public class envelope {
+public class chessBoard {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the number of stars for width and height");
+        System.out.println("Please enter the number of stars on the X and Y axis");
         int x = scanner.nextInt();
         int y = x;
 

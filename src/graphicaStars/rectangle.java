@@ -9,9 +9,9 @@ public class rectangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the number of lines on the X axis");
+        System.out.println("Please enter width");
         int x = scanner.nextInt();
-        System.out.println("Please enter the number of lines on the Y axis");
+        System.out.println("Please enter height");
         int y = scanner.nextInt();
 
         for (int i = 0;i <= y; i++) {
