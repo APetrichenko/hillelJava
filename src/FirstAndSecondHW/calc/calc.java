@@ -1,4 +1,4 @@
-package calc;
+package FirstAndSecondHW.calc;
 
 import java.util.Scanner;
 

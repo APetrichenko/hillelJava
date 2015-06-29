@@ -1,3 +1,5 @@
+package FirstAndSecondHW;
+
 import java.util.Scanner;
 
 /**

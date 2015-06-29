@@ -1,4 +1,4 @@
-package graphicaStars;
+package FirstAndSecondHW.graphicaStars;
 
 import java.util.Scanner;
 
