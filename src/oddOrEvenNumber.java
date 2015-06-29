@@ -10,8 +10,8 @@ public class oddOrEvenNumber {
         int n = scanner.nextInt();
         int result = (n % 2);
         if (result == 0){
-            System.out.println("Number is odd (Chislo chetnoe)");
+            System.out.println("Number is odd (Chislo nechetnoe)");
         }else
-            System.out.println("Number is even (Chislo nechetnoe)");
+            System.out.println("Number is even (Chislo chetnoe)");
     }
 }
