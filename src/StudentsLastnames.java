@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * Created by Alexey on 6/30/15.
  */
@@ -14,7 +15,14 @@ public class StudentsLastnames {
 
         System.out.println(students[8]);
         System.out.println(students.length);
+
+        for (int i = 0;i < students.length;i++){  //показывает сожержание вего массива
+            System.out.println(students[i]);
+        }
+
+
     }
+
         public static String[] expandArray(String[] inArray, int expandBy) {
         int initLength = inArray.length;
         String[] result = new String[initLength+expandBy];
@@ -23,6 +31,7 @@ public class StudentsLastnames {
         }
         return result;
     }
+
 
 }
 
