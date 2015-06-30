@@ -19,7 +19,7 @@ public class RectangleCoordinates {
         System.out.println("Input your Y point");
         double y = in.nextDouble();
 
-        if (((x > x1)&&(x < x2))&&((y > y1)&&(y < y2))){
+        if (((x > x1)&&(x < x2))&&((y < y1)&&(y > y2))){
             System.out.println("Your point in square coordinates");
         }else{
             System.out.println("Your point out of square coordinates");
