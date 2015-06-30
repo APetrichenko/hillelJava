@@ -31,6 +31,26 @@ public class StudentsLastnames {
         }
         return result;
     }
+    public String[] addStudent(String[] students, String newSt){
+        students = expandArray(students, 1);
+        students[students.length-1] = newSt;
+        return students;
+    }
+    public String[] remove(String[] students,String surname){
+        String[] result = new String[students.length];
+        int j=0;
+        for (int i=0;i<students.length;i++){
+            if (!students[i].equals(surname)){
+                result[j] = students[i];
+                j++;
+            }
+        }
+
+
+
+        return result;
+
+    }
 
 
 }
