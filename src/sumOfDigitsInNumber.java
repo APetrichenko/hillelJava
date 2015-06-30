@@ -7,14 +7,14 @@ public class sumOfDigitsInNumber {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter number");
-        int d = in.nextInt();
-        int e = 0;
-        while (d > 0){
-            e = e + d % 10;
-            d = d / 10;
+        int i = in.nextInt(); // число которое вводим
+        int n = 0;           // сумма цифр в числе
+        while (i > 0){
+            n = n + i % 10;
+            i = i / 10;
         }
 
-        System.out.print(e);
+        System.out.print(n);
 
     }
 }
