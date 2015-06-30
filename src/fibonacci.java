@@ -19,5 +19,5 @@ public class fibonacci {
         if (n == 1) return 1;
         return (fib(n-1) + fib(n-2));
     }
-
+//F(n)=F(n-1)+F(n-2) furmula
 }
