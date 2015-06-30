@@ -11,7 +11,7 @@ public class envelope {
 
         System.out.println("Please enter the number of stars for width and height");
         int x = scanner.nextInt();
-        int y = x;
+        int y = scanner.nextInt();
 
         for (int i = 0;i <= y; i++) {
             for (int j = 0; j <= x; j++) {
