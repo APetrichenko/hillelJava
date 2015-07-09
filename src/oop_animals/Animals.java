@@ -17,7 +17,7 @@ public class Animals {
     }
 
 
-    public void voice(String v){
+    public void voice(){
         System.out.println("Hello, ");
     }
 

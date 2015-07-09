@@ -10,4 +10,6 @@ public class Pets extends Animals{
     public Pets(int i, int a, int w, String c) {
         super(i, a, w, c);
     }
+
+
 }

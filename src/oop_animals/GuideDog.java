@@ -6,7 +6,11 @@ package oop_animals;
 public class GuideDog extends Dog{
     public boolean isTrained;
 
-    public String goHome (String home){
-        return home;
+    public GuideDog(int i, int a, int w, String c) {
+        super(i, a, w, c);
+    }
+
+    public void goHome(){
+
     }
 }

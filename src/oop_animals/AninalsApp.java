@@ -5,6 +5,12 @@ package oop_animals;
  */
 public class AninalsApp {
     public static void main(String[] args) {
-        Animals animal_1 = new Animals(0, 6, 12,"brown" );
+        Animals animal_1 = new Cat(1, 6, 12,"brown" );
+
+        System.out.println(animal_1);
+
+
     }
+
+
 }
