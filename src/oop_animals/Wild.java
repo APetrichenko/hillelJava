@@ -5,4 +5,7 @@ package oop_animals;
  */
 public class Wild extends Animals{
 
+    public Wild(int i, int a, int w, String c) {
+        super(i, a, w, c);
+    }
 }

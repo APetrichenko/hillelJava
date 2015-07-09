@@ -6,4 +6,8 @@ package oop_animals;
 public class Pets extends Animals{
     public boolean isVaccinated;
     public String name;
+
+    public Pets(int i, int a, int w, String c) {
+        super(i, a, w, c);
+    }
 }

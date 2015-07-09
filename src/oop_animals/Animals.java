@@ -9,10 +9,16 @@ public class Animals {
     public int weight;
     public String color;
 
+    public Animals (int i, int a, int w, String c){
+        id = i;
+        age = a;
+        weight = w;
+        color = c;
+    }
 
-    public String Voice (String voice){
+
+    public void voice(String v){
         System.out.println("Hello, ");
-        return voice;
     }
 
     public int getId() {
@@ -22,4 +28,30 @@ public class Animals {
     public void setId(int id) {
         this.id = id;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
 }

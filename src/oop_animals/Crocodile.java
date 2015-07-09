@@ -5,4 +5,6 @@ package oop_animals;
  */
 public class Crocodile extends Wild{
     public boolean isPredator;
+
+
 }
