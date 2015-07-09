@@ -1,3 +1,5 @@
+package first;
+
 import java.util.Scanner;
 /**
  * Created by Alexey on 6/30/15.
