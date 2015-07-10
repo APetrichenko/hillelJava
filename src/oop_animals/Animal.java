@@ -3,7 +3,7 @@ package oop_animals;
 /**
  * Created by Alexey on 7/9/15.
  */
-public class Animal {
+public abstract class Animal {
     private int id;
     public int age;
     public double weight;
@@ -21,12 +21,14 @@ public class Animal {
 
 
     public void say(){
-        System.out.println("Hello, ");
+        System.out.println("Hello ");
     }
 
     public String phrase(){
         return "Hello ";
     }
+
+//    public abstract void move(){}
 
     public int getId() {
         return id;

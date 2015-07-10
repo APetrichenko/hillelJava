@@ -29,6 +29,7 @@ public class Wild extends Animal {
         return isPredator;
     }
 
+
     public void setIsPredator(boolean isPredator) {
         this.isPredator = isPredator;
     }
