@@ -21,7 +21,7 @@ public abstract class Animal {
 
 
     public void say(){
-        System.out.println("Hello ");
+        System.out.println(phrase());
     }
 
     public String phrase(){

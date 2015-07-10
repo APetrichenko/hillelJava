@@ -12,7 +12,7 @@ public class Cat extends Pets{
     public Cat() {
     }
 
- @Override
+    @Override
     public String phrase(){
         String result = super.phrase();
         for (int i=0;i< 5; i++) {
