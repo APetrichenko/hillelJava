@@ -9,6 +9,9 @@ public class Cat extends Pets {
         super(id, age, weight, color, name, isVaccinated);
     }
 
+    public Cat() {
+    }
+
 
     public String phrase(){
         String result = super.phrase();

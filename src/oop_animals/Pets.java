@@ -13,8 +13,8 @@ public class Pets extends Animal {
         this.isVaccinated = isVaccinated;
     }
 
-   // public Pets() {
-    //}
+    public Pets() {
+    }
 
     public String phrase(){
         String result = super.phrase();

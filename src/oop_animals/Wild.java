@@ -13,8 +13,8 @@ public class Wild extends Animal {
         this.isPredator = isPredator;
     }
 
-    //public Wild() {
-    //}
+    public Wild() {
+    }
 
     public String phrase(){
         String result = super.phrase();

@@ -12,6 +12,8 @@ public class App {
         GuideDog cleverDog = new GuideDog(5,10,10,"White","Sharik",true,true);
         GuideDog notCleverDog = new GuideDog(6,1,3,"Grey","Muhtar",true,false);
 
+       // Cat myCat = new Cat();
+
         cat.say();
         lion.say();
         dog.say();
