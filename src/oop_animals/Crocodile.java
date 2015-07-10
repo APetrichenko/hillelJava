@@ -7,7 +7,11 @@ public class Crocodile extends Wild{
     public boolean isPredator;
 
 
-    public Crocodile(int i, int a, int w, String c) {
-        super(i, a, w, c);
+    public Crocodile(int id, int age, double weight, String color, boolean isPredator) {
+        super(id, age, weight, color, isPredator);
     }
+
+    public Crocodile() {
+    }
+
 }

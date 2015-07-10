@@ -5,14 +5,15 @@ package oop_animals;
  */
 public class Cat extends Pets {
 
-    public Cat(int i, int a, int w, String c) {
-        super(i, a, w, c);
+    public Cat(int id, int age, double weight, String color, String name,boolean isVaccinated) {
+        super(id, age, weight, color, name, isVaccinated);
     }
 
 
-    public void voice(){
-        super.voice();
-        System.out.println( "Meow" );
+    public String phrase(){
+        String result = super.phrase();
+        result += " Meow!";
+        return result;
     }
 
 }

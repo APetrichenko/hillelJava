@@ -3,22 +3,30 @@ package oop_animals;
 /**
  * Created by Alexey on 7/9/15.
  */
-public class Animals {
+public class Animal {
     private int id;
     public int age;
-    public int weight;
+    public double weight;
     public String color;
 
-    public Animals (int i, int a, int w, String c){
-        id = i;
-        age = a;
-        weight = w;
-        color = c;
+    public Animal(int id, int age, int weight, String color){
+        this.id = id;
+        this.age = age;
+        this.weight = weight;
+        this.color = color;
+    }
+
+    public Animal(int id, int age, double weight, String color) {
+
     }
 
 
-    public void voice(){
+    public void say(){
         System.out.println("Hello, ");
+    }
+
+    public String phrase(){
+        return "Hello ";
     }
 
     public int getId() {
@@ -37,11 +45,11 @@ public class Animals {
         this.age = age;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 

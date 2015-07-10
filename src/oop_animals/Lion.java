@@ -6,7 +6,7 @@ package oop_animals;
 public class Lion extends Wild{
     public boolean isPredator;
 
-    public Lion(int i, int a, int w, String c) {
-        super(i, a, w, c);
+    public Lion(int id, int age, double weight, String color, boolean isPredator) {
+        super(id, age, weight, color, isPredator);
     }
 }
