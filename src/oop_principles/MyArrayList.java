@@ -5,9 +5,9 @@ package oop_principles;
  */
 
 public class MyArrayList {
-
+    public static int numOfArrayLists;
     private Object[] list;
-
+    private int[] list;
     private int size;
 
     public MyArrayList() {
@@ -19,15 +19,15 @@ public class MyArrayList {
 
     }
 
-    public MyArrayList(int initialCapacity) {
-        this.size = 0;
-        if (initialCapacity >= 0) {
-            this.list = new int[initialCapacity];
-        } else {
-            this.list = new int[10];//TODO warn
-        }
-    }
-
+//    public MyArrayList(int initialCapacity) {
+//        this.size = 0;
+//        if (initialCapacity >= 0) {
+//            this.list = new int[initialCapacity];
+//        } else {
+//            this.list = new int[10];//TODO warn
+//        }
+//    }
+//
 //    public void add(int value) {
 //        int[] newList = new int[size + 1];
 //        for (int i = 0; i < size; i++) {
@@ -37,14 +37,14 @@ public class MyArrayList {
 //        list = newList;
 //        size++;
 //    }
-
-    public void remove(int index) {
-        //TODO warn if index > size
-        for(int i = index;i<size-1;i++){
-            list[i]=list[i+1];
-        }
-        size--;
-    }
+//
+//    public void remove(int index) {
+//        //TODO warn if index > size
+//        for(int i = index;i<size-1;i++){
+//            list[i]=list[i+1];
+//        }
+//        size--;
+//    }
 //
 //    public boolean contains(int query){
 //        for (int el : list) {
@@ -189,8 +189,8 @@ public class MyArrayList {
 //        System.out.println(Arrays.toString(sorted));
 
         //sort
-//        list.sort();
-//        list.print();
+        list.sort();
+        list.print();
 
     }
 }
