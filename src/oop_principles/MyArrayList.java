@@ -6,7 +6,7 @@ package oop_principles;
 
 public class MyArrayList {
     public static int numOfArrayLists;
-    private Object[] list;
+   // private Object[] list;
     private int[] list;
     private int size;
 
@@ -189,8 +189,8 @@ public class MyArrayList {
 //        System.out.println(Arrays.toString(sorted));
 
         //sort
-        list.sort();
-        list.print();
-
-    }
+//        list.sort();
+//        list.print();
+//
+//    }
 }
