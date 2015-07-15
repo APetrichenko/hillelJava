@@ -8,4 +8,6 @@ public class Guitar implements Instruments {
         System.out.println("до ми соль до ре до");
     }
 
+
+
 }
