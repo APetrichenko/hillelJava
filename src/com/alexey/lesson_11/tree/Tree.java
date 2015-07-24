@@ -28,20 +28,22 @@ public class Tree {
 
         Comparable addToComparable = (Comparable)addToObj;
         Comparable newNodeComparable = (Comparable)newNodeObj;
-        if (addToComparable.compareTo(newNodeComparable)==0){
-            return;
-        }
+//        if(addToComparable.compareTo(newNodeComparable)==0){     /// ne nuzhno
+//            return;
+//        }
 
        if(addToComparable.compareTo(newNodeComparable)>0){
          if(addTo.getLeft()==null){
                addTo.setLeft(newNode);
-           }
-           add(addTo.getLeft(), newNode);
+           } else {
+             add(addTo.getLeft(), newNode);
+         }
        } else if(addToComparable.compareTo(newNodeComparable)<0){
            if(addTo.getRight()==null){
                addTo.setRight(newNode);
+           } else {
+               add(addTo.getRight(), newNode);
            }
-           add(addTo.getRight(), newNode);
        }
     }
 
@@ -53,7 +55,48 @@ public class Tree {
 
     public static void main(String[] args) {
         Tree tree = new Tree();
+        Tree.Node node = new Tree.Node(1); ///tak sozdautsya esli class static
+    //    tree.new Node(1);  //tak sozdautsya vlozhannie objecti classov
+    //    tree.new Node(2);
+
+        tree.add(3);
+        tree.add(3);
+        tree.add(4);
+        tree.add(5);
         System.out.println(tree);
+    }
+
+
+ // NESTED class  - vlozhenniy class
+    public static class Node {
+        private Object data;
+        private Node left;
+        private Node right;
+
+        public Node(Object data) {
+            this.data = data;
+
+        }
+
+        public Node getLeft() {
+            return left;
+        }
+
+        public void setLeft(Node left) {
+            this.left = left;
+        }
+
+        public Node getRight() {
+            return right;
+        }
+
+        public void setRight(Node right) {
+            this.right = right;
+        }
+
+        public Object getData() {
+            return data;
+        }
     }
 }
 
