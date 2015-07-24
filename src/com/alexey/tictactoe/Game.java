@@ -64,7 +64,7 @@ public class Game {
             }
             boolean playerWin = gameLogic.checkPlayerWin();
             if(playerWin){
-                JOptionPane.showMessageDialog(null, "You win");
+                JOptionPane.showMessageDialog(null, "You winner!!Gongrats!");
                 System.exit(0);
             }
 
@@ -75,7 +75,7 @@ public class Game {
             buttons[aiPos].setText("O");
 
             if(aiWin){
-                JOptionPane.showMessageDialog(null, "AI win");
+                JOptionPane.showMessageDialog(null, "AI win! Try again.");
                 System.exit(0);
             }
 
