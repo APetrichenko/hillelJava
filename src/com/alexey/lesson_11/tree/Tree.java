@@ -53,6 +53,9 @@ public class Tree {
         return null;
     }
 
+    //TODO
+//    getMin();
+
     public static void main(String[] args) {
         Tree tree = new Tree();
         Tree.Node node = new Tree.Node(1); ///tak sozdautsya esli class static
