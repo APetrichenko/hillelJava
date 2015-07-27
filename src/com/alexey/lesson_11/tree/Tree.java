@@ -7,6 +7,9 @@ import java.time.temporal.Temporal;
  */
 public class Tree {
     private Node root;    // privatnoe pole koren; tipa Node
+    private int min;
+    private int max;
+
 
     public void add(Object object){
         Node node = new Node(object);
@@ -46,6 +49,42 @@ public class Tree {
            }
        }
     }
+    public Object getMin() {
+        return (getMin(root));
+    }
+
+    public Object getMin(Node node){
+        Node current = node;
+        if (current != null) {
+            while (current.left != null) {
+                current = current.left;
+            }
+
+            return (current.data);
+        }else{
+           return null;
+        }
+
+}
+
+
+
+    public Object getMax(Node node){
+        Node current = node;
+        if (current != null) {
+            while (current.right != null) {
+                current = current.right;
+            }
+
+            return (current.data);
+        }else {
+            return null;
+        }
+
+    }
+
+
+
 
 
     @Override
@@ -58,7 +97,7 @@ public class Tree {
 
     public static void main(String[] args) {
         Tree tree = new Tree();
-        Tree.Node node = new Tree.Node(1); ///tak sozdautsya esli class static
+    //    Tree.Node node = new Tree.Node(1); ///tak sozdautsya esli class static
     //    tree.new Node(1);  //tak sozdautsya vlozhannie objecti classov
     //    tree.new Node(2);
 
@@ -66,6 +105,8 @@ public class Tree {
         tree.add(3);
         tree.add(4);
         tree.add(5);
+        System.out.println(tree);
+        tree.getMin();
         System.out.println(tree);
     }
 

@@ -17,11 +17,11 @@ public class QueueTest {
         Stack stack = new Stack();
 
 //        Queue queue = new ArrayQueue<>();
-        Deque queue = new ArrayDeque<>();
+ //       Deque queue = new ArrayDeque<>();
 
         ArrayList l;
         LinkedList ll;
-        queue.poll();
+//        queue.poll();
 
         new TreeSet();
 
