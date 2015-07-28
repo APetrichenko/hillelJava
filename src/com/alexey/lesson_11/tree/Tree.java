@@ -77,7 +77,7 @@ public class Tree {
             }
 
             return (current.data);
-        }else {
+        } else {
             return null;
         }
 
@@ -101,10 +101,10 @@ public class Tree {
     //    tree.new Node(1);  //tak sozdautsya vlozhannie objecti classov
     //    tree.new Node(2);
 
-        tree.add(3);
-        tree.add(3);
-        tree.add(4);
-        tree.add(5);
+
+        tree.add(77);
+        tree.add(45);
+        tree.add(65);
         System.out.println(tree);
         tree.getMin();
         System.out.println(tree);
