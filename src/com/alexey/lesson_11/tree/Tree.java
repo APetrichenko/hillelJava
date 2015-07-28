@@ -1,6 +1,7 @@
 package com.alexey.lesson_11.tree;
 
 import java.time.temporal.Temporal;
+import java.util.Objects;
 
 /**
  * Created by ITHILLEL6 on 24.07.2015.
@@ -67,6 +68,9 @@ public class Tree {
 
 }
 
+    private Object getMax() {
+        return (getMax(root));
+    }
 
 
     public Object getMax(Node node){
@@ -84,12 +88,43 @@ public class Tree {
     }
 
 
+    public Object countains(){
+
+        return null;
+    }
+
+
+
+//    public void treeWalk(){
+//        treeWalk(root);
+//    }
+//
+//    public Object treeWalk(Node node){
+//    if (node!=null){
+//        treeWalk(node.getLeft());
+//
+//        treeWalk(node.getRight());
+//    }
+//        return node;
+//}
+
+
+
 
 
 
     @Override
     public String toString() {
-        return null;
+       return "MyTree: " + toString(root);
+    }
+
+
+    private String toString(Node node){
+        if (node== null){
+            return "";
+        }
+        return node.getData().toString() +
+                " " + toString(node.getLeft()) + " " + toString(node.getRight());
     }
 
     //TODO
@@ -102,16 +137,25 @@ public class Tree {
     //    tree.new Node(2);
 
 
-        tree.add(77);
-        tree.add(45);
+
         tree.add(65);
+
+        tree.add(77243);
+        tree.add(45);
+        tree.add(11);
+        tree.add(2342349);
+        tree.add(3);
+
         System.out.println(tree);
-        tree.getMin();
-        System.out.println(tree);
+
+        System.out.println(tree.getMax());
+
+        System.out.println(tree.getMin());
     }
 
 
- // NESTED class  - vlozhenniy class
+
+    // NESTED class  - vlozhenniy class
     public static class Node {
         private Object data;
         private Node left;
