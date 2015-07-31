@@ -80,7 +80,7 @@ public class HashTable {
 
 
         System.out.println(table);
-        ivanov.getMarks()[0]=2;
+        //ivanov.getMarks()[0]=2;
 
         System.out.println(ivanov.hashCode());
 

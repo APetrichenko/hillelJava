@@ -9,6 +9,7 @@ public abstract class Animal {
     public double weight;
     public String color;
 
+
     public Animal(int id, int age, double weight, String color){
         this.id = id;
         this.age = age;
@@ -61,6 +62,7 @@ public abstract class Animal {
     public void setColor(String color) {
         this.color = color;
     }
+
 
 
 }
