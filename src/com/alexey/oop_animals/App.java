@@ -1,5 +1,6 @@
 package com.alexey.oop_animals;
 
+import com.alexey.oop_2.Student;
 import com.alexey.oop_animals.observable.Observer;
 import com.alexey.oop_animals.observers.HungryObserver;
 import com.alexey.oop_animals.observers.SicknessObserver;
@@ -16,8 +17,8 @@ public class App {
 
     public static Giraffe giraffe;
 
-    public static List init() {
-        List zoo = new ArrayList();
+    public static Zoo init() {
+        Zoo zoo = new Zoo();
 
         Cat cat = new Cat(1,3,3.4,"Grey","Murka",true);
         zoo.add(cat);
@@ -98,20 +99,39 @@ public class App {
 //    }
 
     public static void main(String[] args) {
-        Observer doctor = new SicknessObserver();
-        Observer feeder = new HungryObserver();
+//        Observer doctor = new SicknessObserver();
+//        Observer feeder = new HungryObserver();
+//
+//        Hamster hamster = new Hamster();
+//        Fish fish = new Fish();
+//
+//        hamster.addObserver(doctor);
+//        hamster.addObserver(feeder);
+//
+//        fish.addObserver(feeder);
+//
+//        hamster.notifyObservers();
+//
+//        fish.notifyObservers();
 
-        Hamster hamster = new Hamster();
-        Fish fish = new Fish();
+//        Zoo zoo = init();
+//        System.out.println(zoo.remove(2));
+//        addGirafe(zoo);
+//        System.out.println(zoo.get(6));
+        String name = "Petya";
+        String surname = "Ivanov";
 
-        hamster.addObserver(doctor);
-        hamster.addObserver(feeder);
+        Pair<String,Student> nameAndSurname2 = new Pair<>(name, surname , new Student(1, "Iv"));
 
-        fish.addObserver(feeder);
 
-        hamster.notifyObservers();
-
-        fish.notifyObservers();
     }
 
+
+
+
+/*
+    public static void addGirafe(Zoo zoo){
+        zoo.add(giraffe);
+    }
+*/
 }

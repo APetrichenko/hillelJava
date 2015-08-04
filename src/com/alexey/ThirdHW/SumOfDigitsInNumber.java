@@ -1,4 +1,4 @@
-package ThirdHW;
+package com.alexey.ThirdHW;
 
 /**
  * Created by Alexey on 29.06.2015.

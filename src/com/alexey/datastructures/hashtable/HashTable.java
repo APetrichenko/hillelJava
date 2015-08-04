@@ -1,6 +1,6 @@
 package com.alexey.datastructures.hashtable;
 
-import com.alexey.oop_students.Student;
+import com.alexey.oop_2.Student;
 
 import java.util.Arrays;
 import java.util.LinkedList;

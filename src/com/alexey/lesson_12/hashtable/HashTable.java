@@ -1,6 +1,6 @@
 package com.alexey.lesson_12.hashtable;
 
-import com.alexey.oop_students.Student;
+import com.alexey.oop_2.Student;
 
 import java.util.Arrays;
 import java.util.LinkedList;
