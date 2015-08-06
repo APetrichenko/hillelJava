@@ -121,7 +121,7 @@ public class App {
         String name = "Petya";
         String surname = "Ivanov";
 
-        Pair<String,Student> nameAndSurname2 = new Pair<>(name, surname , new Student(1, "Iv"));
+        Pair<String,Student> nameAndSurname2 = new Pair<String,Student>(name, surname , new Student(1, "Iv"));
 
 
     }

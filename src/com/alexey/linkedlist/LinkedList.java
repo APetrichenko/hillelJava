@@ -153,6 +153,9 @@ public class LinkedList implements Collection {
 
 
         List1.add("fdg");
+        List1.add("fg");
+        List1.add("fdfgdg");
+        List1.add("fddfg");
 
 //        System.out.println(List1);
 
