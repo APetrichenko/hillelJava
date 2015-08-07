@@ -20,7 +20,7 @@ public class TheApp {
         panel.add(buttonLeft);
         panel.add(buttonRight);
         myFrame.setContentPane(panel);
-//        myFrame.pack();
+  //      myFrame.pack();
         myFrame.setVisible(true);
     }
 }

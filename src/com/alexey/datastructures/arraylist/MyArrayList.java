@@ -46,6 +46,9 @@ public class MyArrayList  {
      removes by index
      */
     public boolean remove(int index) {
+        if(index<0 || index>size){
+            throw new IndexOutOfBoundsException("error");
+        }
         validateIndex(index);
         for (int i = index; i < size - 1; i++) {
             list[i] = list[i + 1];
