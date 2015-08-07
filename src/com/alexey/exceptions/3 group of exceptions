@@ -1,0 +1,3 @@
+1.Error - smth like hardware error
+2.Runtime Exception - wrong program code
+3.Exception - usual situasion (bad situation but its ok, e.g internet connection fail, no aceess for DB, cant find file)
