@@ -12,7 +12,7 @@ import java.util.TreeSet;
 /**
  * Created by NewClass7 on 07.08.2015.
  */
-public class Test1 extends  JFrame{
+public class Test1 extends  JFrame {
     private JPanel panel1;
     private JTextField textField1;
     private JPasswordField passwordField1;
@@ -47,14 +47,15 @@ public class Test1 extends  JFrame{
     }
 
     //Anonimnie classi
-    public static void operate(JTextField field){
- //       ActionListener listener = new MyActionListener();
-//        field.getActionListeners(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                System.out.println("printed");
-//            }
-//            )
+       public static void operate(JTextField field) {
+//           ActionListener listener = new MyActionListener();
+//    field.getActionListeners(new ActionListener() {
+//        @Override
+//        public void actionPerformed(ActionEvent e) {
+//            System.out.println("printed");
 //        }
+//        )
 //    }
 //}
+}
+}
