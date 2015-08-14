@@ -1,4 +1,4 @@
-package com.alexey.patern_singleton;
+package com.alexey.patterns.patern_singleton;
 
 /**
  * Created by ITHILLEL6 on 17.07.2015.
