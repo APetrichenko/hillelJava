@@ -1,13 +1,13 @@
-package com.alexey.thread_cerating;
+package com.alexey.thread_cerating.runnable;
 
 /**
- * Created by NewClass7 on 21.08.2015.
+ * Created by NewClass7 on 25.08.2015.
  */
-public class MyThread extends Thread {
+public class Worker implements Runnable {
     @Override
     public void run() {
-        for(int i=0;i<10;i++){
-            System.out.println("User thread " + i );
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Main thread " + i);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
