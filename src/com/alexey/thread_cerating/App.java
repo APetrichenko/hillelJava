@@ -23,6 +23,7 @@ public class App {
         thread.start();
     }
 
+
     public static void printTenNumbersWithDelay() {
         for (int i=0;i<10;i++) {
             System.out.println("Main thread "+i);
