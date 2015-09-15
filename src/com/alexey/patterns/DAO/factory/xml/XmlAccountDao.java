@@ -2,10 +2,10 @@ package com.alexey.patterns.DAO.factory.xml;
 
 import com.alexey.patterns.DAO.businessobject.Account;
 import com.alexey.patterns.DAO.factory.AccountDao;
-import jdk.internal.org.xml.sax.SAXException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -126,9 +126,9 @@ public class XmlAccountDao implements AccountDao {
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
             e.printStackTrace();
         }
         return null;
