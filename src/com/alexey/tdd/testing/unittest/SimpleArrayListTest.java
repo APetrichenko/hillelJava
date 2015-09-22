@@ -33,7 +33,7 @@ public class SimpleArrayListTest {
 
     @Test
     public void additionTest(){
-//        SimpleArrayList arrayList = new SimpleArrayList();
+//        SimpleArrayList arrayList = new SimpleArrayList();  //вметсо того чтобы объе€л€ть в каждом тесте можно объ€вить д€л всех как сделано выше
         arrayList.add(1);
         arrayList.add(1);
         arrayList.add(1);
@@ -49,8 +49,14 @@ public class SimpleArrayListTest {
         assertTrue(arrayList.isEmpty());
         arrayList.add(1);
         assertFalse(arrayList.isEmpty());
-
     }
+
+//    @Test(expected = IndexOutOfBoundsException.class)
+//    public void nullAdditionTest (){
+//
+//        arrayList.add(-1);
+//
+//    }
 
     @After
     public void tearDown(){
