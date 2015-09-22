@@ -5,11 +5,30 @@ package com.alexey.tdd.testing;
  */
 public class SimpleArrayList {
 
+    private int[] data = new int[10];
+    private int size = 0;
     public boolean add(int i) {
-        return false;
+        if(data.length>size){
+            data[size] = i;
+            size++;
+            return  true;
+
+        } else{
+            int[] newData = new int[data.length*2];
+            System.arraycopy(data, 0, newData, 0 , data.length);
+            data = newData;
+            data[size] = i;
+            size++;
+            return true;
+
+        }
     }
 
     public int size() {
-        return 0;
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size==0;
     }
 }
