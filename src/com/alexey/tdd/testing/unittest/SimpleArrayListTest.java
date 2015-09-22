@@ -3,9 +3,7 @@ package com.alexey.tdd.testing.unittest;
 import com.alexey.tdd.testing.SimpleArrayList;
 
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
@@ -16,17 +14,22 @@ public class SimpleArrayListTest {
 
     SimpleArrayList arrayList;
 
+    @BeforeClass
+    public static void setUpAll(){
+        System.out.println("Set up all");
+    }
+
     @Before
     public void setUp() {
         System.out.println("B1");
         arrayList = new SimpleArrayList();
     }
 
-    @Before
-    public void setUp2() {
-        System.out.println("B2");
-        arrayList = new SimpleArrayList();
-    }
+//    @Before
+//    public void setUp2() {
+//        System.out.println("B2");
+//        arrayList = new SimpleArrayList();
+//    }
 
     @Test
     public void additionTest(){
@@ -51,6 +54,11 @@ public class SimpleArrayListTest {
     @After
     public void tearDown(){
         System.out.println("Complete");
+    }
+
+    @AfterClass
+    public static void tearDownAll(){
+        System.out.println("Complete All");
     }
 
 
