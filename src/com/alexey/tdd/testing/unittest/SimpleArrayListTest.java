@@ -42,6 +42,7 @@ public class SimpleArrayListTest {
         assertEquals(4, arrayList.size());
     }
 
+    @Ignore  // Ignore this test  (ставится если хотим пропустить этот тест)
     @Test
     public void isEmptyTest (){
 //        SimpleArrayList arrayList = new SimpleArrayList();
