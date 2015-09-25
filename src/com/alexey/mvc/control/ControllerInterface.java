@@ -1,4 +1,4 @@
-package mvc.control;
+package com.alexey.mvc.control;
 
 /**
  * Created by NewClass7 on 18.09.2015.

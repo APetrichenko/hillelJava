@@ -1,7 +1,7 @@
-package mvc.view;
+package com.alexey.mvc.view;
 
-import mvc.control.ControllerInterface;
-import mvc.model.BeatModelInterface;
+import com.alexey.mvc.control.ControllerInterface;
+import com.alexey.mvc.model.BeatModelInterface;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,7 +1,7 @@
-package mvc.control;
+package com.alexey.mvc.control;
 
-import mvc.model.BeatModelInterface;
-import mvc.view.DJView;
+import com.alexey.mvc.model.BeatModelInterface;
+import com.alexey.mvc.view.DJView;
 
 /**
  * Created by NewClass7 on 18.09.2015.

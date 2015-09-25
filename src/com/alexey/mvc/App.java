@@ -1,9 +1,9 @@
-package mvc;
+package com.alexey.mvc;
 
-import mvc.control.BeatController;
-import mvc.control.ControllerInterface;
-import mvc.model.BeatModelInterface;
-import mvc.model.BeatModelOk;
+import com.alexey.mvc.control.BeatController;
+import com.alexey.mvc.control.ControllerInterface;
+import com.alexey.mvc.model.BeatModelInterface;
+import com.alexey.mvc.model.BeatModelOk;
 
 /**
  * Created by NewClass7 on 18.09.2015.

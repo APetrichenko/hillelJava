@@ -1,7 +1,7 @@
-package mvc.model;
+package com.alexey.mvc.model;
 
-import mvc.view.BeatObserver;
-import mvc.view.BpmObserver;
+import com.alexey.mvc.view.BeatObserver;
+import com.alexey.mvc.view.BpmObserver;
 
 /**
  * Created by NewClass7 on 18.09.2015.

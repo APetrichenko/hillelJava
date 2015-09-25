@@ -1,4 +1,4 @@
-package mvc.view;
+package com.alexey.mvc.view;
 
 import javax.swing.*;
 
