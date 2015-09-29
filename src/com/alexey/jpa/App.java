@@ -1,10 +1,10 @@
 package com.alexey.jpa;
 
-import java.awt.print.Book;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+
 
 /**
  * Created by NewClass7 on 25.09.2015.

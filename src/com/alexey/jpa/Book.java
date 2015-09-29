@@ -1,16 +1,13 @@
 package com.alexey.jpa;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by NewClass7 on 25.09.2015.
  */
 
 @Entity
-//@Table(name = "book")
+@Table(name = "book")
 
 public class Book {
     @Id
