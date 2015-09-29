@@ -32,6 +32,10 @@ public class Book {
 
     public List<String> getTags() {return tags;}
 
+    public void setTags() {
+        this.tags = tags;
+    }
+
     public Long getId() {
         return id;
     }
