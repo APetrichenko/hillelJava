@@ -10,6 +10,9 @@ import javax.persistence.Persistence;
  * Created by NewClass7 on 25.09.2015.
  */
 public class App {
+
+    private static EntityManagerFactory entityManagerFactory;
+
     public static void main(String[] args) {
         Book book  = new Book();
         book.setTitle("Some title");
@@ -18,6 +21,9 @@ public class App {
         book.setIsbn("some isbn");
         book.setNumOfPages(234);
         book.setIllustrations(false);
+        book.getTags().add("nice book");
+        book.getTags().add("very nice");
+
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("book");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
@@ -28,5 +34,27 @@ public class App {
 
         entityManager.close();
         entityManagerFactory.close();
+    }
+
+    public static void getAndPrint() {
+
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+        EntityTransaction entityTransaction = entityManager.getTransaction();
+        entityTransaction.begin();
+
+        Book foundBook = entityManager.getReference(Book.class, 1L);
+        System.out.println("__________________");
+       // System.out.println(foundBook.getTags());
+
+        entityManager.remove(foundBook);
+        entityTransaction.commit();
+
+        entityManager.close();
+        entityManagerFactory.close();
+
+        System.out.println(foundBook.getTags());
+
+
     }
 }

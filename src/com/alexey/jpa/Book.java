@@ -1,6 +1,8 @@
 package com.alexey.jpa;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by NewClass7 on 25.09.2015.
@@ -20,8 +22,15 @@ public class Book {
     private Integer numOfPages;
     private Boolean illustrations;
 
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(name = "Tag")
+    @Column(name = "Value")
+    private List<String> tags = new ArrayList<>();
+
     public Book() {
     }
+
+    public List<String> getTags() {return tags;}
 
     public Long getId() {
         return id;
@@ -78,4 +87,6 @@ public class Book {
     public void setIllustrations(Boolean illustrations) {
         this.illustrations = illustrations;
     }
+
+
 }
